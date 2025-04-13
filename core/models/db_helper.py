@@ -35,6 +35,6 @@ class DatabaseHelper:
         await session.close()
 
 db_helper = DatabaseHelper(
-    settings.DATABASE_URL_asyncpg, 
-    settings.db_echo
+    settings.db.DATABASE_URL_asyncpg, 
+    settings.db.echo
     )
