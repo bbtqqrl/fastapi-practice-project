@@ -22,9 +22,12 @@ class DbSettings(BaseSettings):
 class AuthJWT(BaseModel):
     private_key_path: Path = BASEDIR / "certs" / "jwt-private.pem"
     public_key_path: Path = BASEDIR / "certs" / "jwt-public.pem"
+    algorithm: str = "RS256"
 
 class Settings(BaseSettings):
     api_v1_prefix: str = "/api/v1"
     db: DbSettings = DbSettings()
+
+    authjwt: AuthJWT = AuthJWT()
 
 settings = Settings()
