@@ -11,11 +11,12 @@ if TYPE_CHECKING:
 class User(Base):
     username: Mapped[str] = mapped_column(String(32), unique=True)
 
-    post: Mapped[list["Post"]] = relationship(back_populates="user")
+    posts: Mapped[list["Post"]] = relationship(back_populates="user")
     profile: Mapped["Profile"] = relationship(back_populates="user")
 
-    def __str__(self) -> str:
-        return f"{self.__class__.__name__}({self.username!r})"
-
-    def __repr__(self) -> str:
+    def __str__(self):
+        return f"{self.__class__.__name__}(id={self.id}, username={self.username})"
+    
+    def __repr__(self):
         return str(self)
+
