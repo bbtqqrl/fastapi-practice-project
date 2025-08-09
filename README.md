@@ -1,4 +1,4 @@
-# FastAPI Practice Backend 🧪
+# FastAPI Practice Backend 
 
 This project is a personal educational backend built with **FastAPI**, **SQLAlchemy (async)**, **Alembic**, and **PostgreSQL**.  
 It is being developed to improve backend development skills, database handling, and API structuring.
@@ -7,7 +7,7 @@ Although there is no specific business goal yet, the project simulates a real-wo
 
 ---
 
-## 🔧 Tech Stack (Current)
+## Tech Stack (Current)
 
 - **FastAPI** — lightweight Python web framework for APIs
 - **SQLAlchemy (Async ORM)** — database layer
@@ -18,7 +18,7 @@ Although there is no specific business goal yet, the project simulates a real-wo
 
 ---
 
-## 🚀 Planned Tech Stack (Future)
+## Planned Tech Stack (Future)
 
 - **JWT Authentication**
 - **OAuth2 / Google login**
@@ -30,14 +30,14 @@ Although there is no specific business goal yet, the project simulates a real-wo
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
 This project is built mainly for **learning and portfolio** purposes.  
 It's a place to experiment, practice clean architecture, and build up backend intuition with async Python technologies.
 
 ---
 
-## 📁 Project Structure (simplified)
+## Project Structure (simplified)
 
 ```
 .
@@ -54,9 +54,9 @@ It's a place to experiment, practice clean architecture, and build up backend in
 
 ---
 
-## 🛠️ How to Run Locally
+## How to Run Locally
 
-> ✅ Make sure you have Python 3.10+ and PostgreSQL installed.
+> Make sure you have Python 3.10+ and PostgreSQL installed.
 
 1. **Clone the repo**
 ```bash
@@ -97,17 +97,17 @@ alembic upgrade head
 uvicorn main:app --reload
 ```
 
-Then visit: [http://localhost:8000/docs](http://localhost:8000/docs) to access Swagger UI 🚀
+Then visit: [http://localhost:8000/docs](http://localhost:8000/docs) to access Swagger UI 
 
 ---
 
-## 🧠 Author
+## Author
 
 Created by **Maxym Horelchyk** — a beginner backend developer learning by building.  
 This is a learning sandbox, but parts of it may grow into production-ready components.
 
 ---
 
-## 📌 License
+## License
 
 MIT License – free to use and modify.
